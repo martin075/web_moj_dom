@@ -1,0 +1,12 @@
+//poller thing -lenght, type are required
+Bridge modbus:serial:endpointMOXA [port="COM7",baud=9600,id=11,dataBits=8,parity="none",stopBits="1",encoding="rtu"] {
+	 Bridge poller holdingsREG[ start=0, length=6, refresh=4000, type="holding"] {
+		Thing data temp1 [ readStart="0", readValueType="int16", readTransform="JS(divide10.js)" ]
+		Thing data temp2 [ readStart="1", readValueType="int16", readTransform="JS(divide10.js)" ]
+		Thing data temp3 [ readStart="2", readValueType="int16", readTransform="JS(divide10.js)" ]
+		Thing data temp4 [ readStart="3", readValueType="int16", readTransform="JS(divide10.js)" ]
+		Thing data temp5 [ readStart="4", readValueType="int16", readTransform="JS(divide10.js)" ]
+		Thing data temp6 [ readStart="5", readValueType="int16", readTransform="JS(divide10.js)" ]
+	}
+
+}

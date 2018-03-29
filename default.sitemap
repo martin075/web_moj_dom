@@ -1,0 +1,21 @@
+sitemap default label="Moj dom" {
+     Frame label="datum a cas" {   
+            Text item=vychodS
+			Text item=zapadS
+			Text item=SunElevation
+			Text item=vychodM
+			Text item=date
+			}
+	Frame label="Teploty" {
+			Text item=prvy label="Snimac 1[%.1f °C]" icon="temperature"
+            Text item=druhy label="Snimac 2[%.1f °C]" icon="temperature"
+            Text item=treti label="Snimac 3[%.1f °C]" icon="temperature"
+            Text item=stvrty label="Snimac 4[%.1f °C]" icon="temperature"
+            Text item=piaty label="Snimac 5[%.1f °C]" icon="temperature"
+            Text item=siesty label="Snimac 6[%.1f °C]" icon="temperature"
+            }
+	Frame label="grafy" {
+			Chart item=teploty icon="chart" label="graf" refresh=3000 period=h service="rrd4j" legend=true
+			}
+
+}
