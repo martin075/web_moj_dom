@@ -10,5 +10,5 @@ Strategies {
 Items {
 	// persist all items once a day and on every change and restore them from the db at startup
 	// group teploty
-piaty,siesty : strategy = everyMinute,everyChange
+prvy,druhy,treti,stvrty,piaty,siesty,prvy2,druhy2,treti2,stvrty2,piaty2,siesty2,tlak,teplotaP : strategy = everyMinute,everyChange,restoreOnStartup
 }

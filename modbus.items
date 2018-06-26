@@ -1,7 +1,19 @@
-Group teploty
-Number prvy  (teploty) { channel="modbus:data:endpointMOXA:holdingsREG:temp1:number" }
-Number druhy (teploty) { channel="modbus:data:endpointMOXA:holdingsREG:temp2:number" }
-Number treti (teploty) { channel="modbus:data:endpointMOXA:holdingsREG:temp3:number" }
-Number stvrty (teploty) { channel="modbus:data:endpointMOXA:holdingsREG:temp4:number" }
-Number piaty (teploty) { channel="modbus:data:endpointMOXA:holdingsREG:temp5:number" }
-Number siesty (teploty) { channel="modbus:data:endpointMOXA:holdingsREG:temp6:number" }
+Group teploty1
+Number prvy  (teploty1) { channel="modbus:data:endpointMOXA:holdingsREG:temp1:number" }
+Number druhy (teploty1) { channel="modbus:data:endpointMOXA:holdingsREG:temp2:number" }
+Number treti (teploty1) { channel="modbus:data:endpointMOXA:holdingsREG:temp3:number" }
+Group teploty2
+Number stvrty (teploty2) { channel="modbus:data:endpointMOXA:holdingsREG:temp4:number" }
+Number piaty (teploty2) { channel="modbus:data:endpointMOXA:holdingsREG:temp5:number" }
+Number siesty (teploty2) { channel="modbus:data:endpointMOXA:holdingsREG:temp6:number" }
+Group teploty3
+Number prvy2  (teploty3) { channel="modbus:data:endpointMOXA2:holdingsREG2:teplota1:number" }
+Number druhy2 (teploty3) { channel="modbus:data:endpointMOXA2:holdingsREG2:teplota2:number" }
+Number treti2 (teploty3) { channel="modbus:data:endpointMOXA2:holdingsREG2:teplota3:number" }
+Group teploty4
+Number stvrty2 (teploty4) { channel="modbus:data:endpointMOXA2:holdingsREG2:teplota4:number" }
+Number piaty2  (teploty4) { channel="modbus:data:endpointMOXA2:holdingsREG2:teplota5:number" }
+Number siesty2 (teploty4) { channel="modbus:data:endpointMOXA2:holdingsREG2:teplota6:number" }
+Group tlaky
+Number tlak			(tlaky) { channel="modbus:data:endpointMOXA2:holdingsREG2:tlakBMP:number" }
+Number teplotaP 	(tlaky) { channel="modbus:data:endpointMOXA2:holdingsREG2:teplotaBMP:number" }
