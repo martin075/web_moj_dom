@@ -1,0 +1,14 @@
+Strategies {
+    everyDay    : "0 0 0 * * ?"
+	everyHour   : "0 0 * * * ?"
+    everyMinute : "0 * * * * ?"
+    
+    // if no strategy is specified for an item entry below, the default list will be used
+    default = everyChange
+}
+
+Items {
+	// persist all items once a day and on every change and restore them from the db at startup
+	// group teploty
+prvy,druhy,treti,stvrty,piaty,siesty,prvy2,druhy2,treti2,stvrty2,piaty2,siesty2,tlak,teplotaP : strategy = everyMinute,everyChange,restoreOnStartup
+}

@@ -1,0 +1,7 @@
+DateTime zapadS "Sun_set [%1$tH:%1$tM]" <sun> (Astro) { channel="astro:sun:home:set#start" }
+DateTime  vychodS "Sun_rise [%1$tH:%1$tM]" <sun> (Astro) { channel="astro:sun:home:rise#start" } // e.g. "Sun 15:26"
+Number   SunElevation  "Elevation [%.1f °]"  <sun>  (Astro) { channel="astro:sun:home:position#elevation" }
+Switch   NightState    "Night"
+DateTime  vychodM "Moon_rise [%1$tH:%1$tM]" <moon> (Astro) { channel="astro:moon:home:rise#start" } // e.g. "Moon 15:26"
+//DateTime SunriseTime "Sun_rise [%1$tH:%1$tM]" <sun> (Astro) { channel="astro:sun:home:rise#end" }
+DateTime datum  "Date [%1$tA, %1$td.%1$tm.%1$tY %1$tH:%1$tM]" <clock> (ntp) { channel="ntp:ntp:demo:dateTime" }

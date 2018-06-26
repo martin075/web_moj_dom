@@ -1,0 +1,46 @@
+sitemap default label="Moj dom" {
+     Frame label="datum a cas" {   
+            Text item=datum
+            Text item=SunElevation
+            Text item=vychodS
+			Text item=zapadS
+			Text item=vychodM
+			}
+	Frame label="Teploty" {
+			Text item=prvy label="Snimac 1[%.1f °C]" icon="temperature"
+            Text item=druhy label="Snimac 2[%.1f °C]" icon="temperature"
+            Text item=treti label="Snimac 3[%.1f °C]" icon="temperature"
+            Text item=stvrty label="Snimac 4[%.1f °C]" icon="temperature"
+            Text item=piaty label="Snimac 5[%.1f °C]" icon="temperature"
+            Text item=siesty label="Snimac 6[%.1f °C]" icon="temperature"
+            }
+	Frame label="grafy 8hodin" {
+			Chart item=teploty1 icon="chart" label="graf" refresh=3000 period=8h service="rrd4j" legend=true
+			Chart item=teploty2 icon="chart" label="graf" refresh=3000 period=8h service="rrd4j" legend=true
+			}
+	Frame label="Teploty2" {
+			Text item=prvy2 label="Snimac 1[%.1f °C]" icon="temperature"
+            Text item=druhy2 label="Snimac 2[%.1f °C]" icon="temperature"
+            Text item=treti2 label="Snimac 3[%.1f °C]" icon="temperature"
+            Text item=stvrty2 label="Snimac 4[%.1f °C]" icon="temperature"
+            Text item=piaty2 label="Snimac 5[%.1f °C]" icon="temperature"
+            Text item=siesty2 label="Snimac 6[%.1f °C]" icon="temperature"
+            Text item=tlak label="tlak atm [%.1f hPa]" icon="pressure"
+            Text item=teplotaP label="teplota atm [%.1f °C]" icon="temperature"
+            }
+     Frame label="grafy 8hodin" {
+			Chart item=teploty3 icon="chart" label="graf3" refresh=3000 period=8h service="rrd4j" legend=true
+			Chart item=teploty4 icon="chart" label="graf4" refresh=3000 period=8h service="rrd4j" legend=true
+			Chart item=tlak icon="chart" label="graf" refresh=3000 period=8h service="rrd4j" legend=true
+			Chart item=teplotaP icon="chart" label="graf" refresh=3000 period=8h service="rrd4j" legend=true
+			}
+	Frame label="grafy 3dni" {
+			Chart item=teploty3 icon="chart" label="graf3" refresh=3000 period=3D service="rrd4j" legend=true
+			Chart item=teploty4 icon="chart" label="graf4" refresh=3000 period=3D service="rrd4j" legend=true
+			Chart item=tlak icon="chart" label="graf" refresh=3000 period=3D service="rrd4j" legend=true
+			Chart item=teplotaP icon="chart" label="graf" refresh=3000 period=3D service="rrd4j" legend=true
+			Chart item=teploty1 icon="chart" label="graf" refresh=3000 period=3D service="rrd4j" legend=true
+			Chart item=teploty2 icon="chart" label="graf" refresh=3000 period=3D service="rrd4j" legend=true
+			}
+
+}
